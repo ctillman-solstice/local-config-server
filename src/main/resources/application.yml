@@ -5,9 +5,10 @@ spring:
     config:
       server:
         git:
-          uri: /Users/caleb/workspace/app-config
+          uri: 'github.com/ctillman-solstice/app-config:http://localhost:8080'
           skip-ssl-validation: true
+      allow-override: true
+      override-none: true
+      override-system-properties: false
   application:
-    name: configserver
-  config:
     name: configserver
