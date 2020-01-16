@@ -5,10 +5,8 @@ spring:
     config:
       server:
         git:
-          uri: 'https://github.com/ctillman-solstice/app-config'
-          username: ctillman-solstice
-          password: '{cipher}51e9239982812944fe32c06f1dd1146eef301def'
-          skip-ssl-validation: false
+          uri: 'git@github.com:ctillman-solstice/app-config'
+          skip-ssl-validation: true
       allow-override: true
       override-none: true
       override-system-properties: false
